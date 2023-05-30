@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"],
+      "@/*": ["src/*"],
+      "~/*": ["src/assets/*"]
+    },
+    /* Basic Options */
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "build",
+
+    "types": ["node", "mocha", "chai", "express"],
+    "lib": ["es5", "es6"],
+    "moduleResolution": "node",
+
+    /* Experimental Options */
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+
+    /* Additional Checks */
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
+
+    /* Advanced Options */
+    "forceConsistentCasingInFileNames": true,
+
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src",
+    "node_modules/cypress/types/cypress-global-vars.d.ts"
+  ],
+  "exclude": [
+    "./node_modules/",
+    "./dist/",
+    "./public/"
+  ]
+}
